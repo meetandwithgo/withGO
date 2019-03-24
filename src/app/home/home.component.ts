@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Event, Ticket } from 'src/model/event';
 import { EventService } from '../event.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'home',
@@ -8,10 +9,11 @@ import { EventService } from '../event.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  events;
+  events: Event[];
 
   constructor(
-    private eventService: EventService
+    private eventService: EventService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -28,4 +30,7 @@ export class HomeComponent implements OnInit {
     this.getEventList(event.page, event.rows);
   }
 
+  goToAddEvent() {
+    this.router.navigate(['/event-new'])
+  }
 }

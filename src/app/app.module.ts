@@ -10,13 +10,20 @@ import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 import { PaginatorModule } from 'primeng/paginator';
 import { DropdownModule } from 'primeng/dropdown';
+import { EventNewComponent } from './event-new/event-new.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'event-new', component: EventNewComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    EventComponent
+    EventComponent,
+    EventNewComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,10 @@ import { DropdownModule } from 'primeng/dropdown';
     ButtonModule,
     HttpClientModule,
     PaginatorModule,
-    DropdownModule
+    DropdownModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
