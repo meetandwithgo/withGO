@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col text-center" id="title">
+    <img src="assets/withgo.png" width="250">
+  </div>
+</div>
+<div class="row">
+  <ng-container *ngFor="let event of events">
+    <div class="col-md-4">
+      <event [data]="event"></event>
+    </div>
+  </ng-container>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <p-paginator [rows]="10" totalRecords="100" [rowsPerPageOptions]="[10,20,30]" (onPageChange)="paginate($event)">
+    </p-paginator>
+  </div>
+</div>

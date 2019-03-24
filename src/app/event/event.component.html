@@ -1,0 +1,10 @@
+<p-card [header]="data.title" [subheader]="data.date" styleClass="ui-card-shadow">
+  <p-header>
+    <img [src]="data.thumbnail" class="event-img">
+  </p-header>
+  <div>{{data.dataDate}}</div>
+  <!-- <div>{{data.content}}</div> -->
+  <p-footer>
+    {{data.ticket.price}}원
+  </p-footer>
+</p-card>

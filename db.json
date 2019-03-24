@@ -1,0 +1,364 @@
+{
+    "events": [
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        },
+        {
+            "id": 0,
+            "thumbnail": "assets/events/event01.png",
+            "title": "Tensorflow Submmit 2019",
+            "content": "인공지능과 딥러닝이 큰 인기를 끌며 혜성처럼 등장한 TensorFlow는 작년 한 해 큰 사랑을 받으며 성장했습니다. 그 인기를 반영하 듯 작년에 처음 열린 TensorFlow Dev Summit은 매우 풍성한 내용이 가득한 즐거운 잔치였습니다",
+            "salesStart": "10:00",
+            "salesEnd": "17:00",
+            "eventDate": "2019.03.01",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 10000
+            }
+        },
+        {
+            "id": 1,
+            "thumbnail": "assets/events/event02.png",
+            "title": "데이터 사이언스 미트업 - 2019년 4월 모임",
+            "content": "데이터 분석가와 과학자들이 만나 피자와 가벼운 맥주를 마시면서 세미나 듣는 방식으로 진행됩니다. R 뿐만 아니라 파이썬을 비롯한 데이터 사이언스 하시는 분들이 모이는 밋업입니다.",
+            "salesStart": "16:00",
+            "salesEnd": "18:00",
+            "eventDate": "2019.04.21",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 17000
+            }
+        },
+        {
+            "id": 2,
+            "thumbnail": "assets/events/event03.png",
+            "title": "Amazon Innovation Day 2019",
+            "content": "\"지구상에서 가장 고객 중심적인 회사\"가 되겠다는 사명을 가지고 1995년 창업한 아마존은 전자상거래를 비롯하여 클라우드 서비스에 이르기까지 다양한 사업 영역에서 오늘날에도 끊임없이 고객에 집중하고 있습니다. 아마존이 가진 이러한 가치를 기반으로 회사 규모가 빠르게 성장함에 따라 어떻게 혁신적인 비즈니스 개척이 가능하였는지 많은 분들이 궁금해 하고 있습니다. 여러분의 궁금증을 해소시켜드리고자 국내 처음 열리는 Amazon Innovation Day에 정중히 초대합니다.",
+            "salesStart": "11:00",
+            "salesEnd": "14:00",
+            "eventDate": "2019.03.27",
+            "ticket": {
+                "id": 0,
+                "name": "일반 입장권",
+                "description": "일반",
+                "price": 25000
+            }
+        }
+    ]
+}
