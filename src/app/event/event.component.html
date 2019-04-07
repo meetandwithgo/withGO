@@ -1,10 +1,11 @@
-<p-card [header]="data.title" [subheader]="data.date" styleClass="ui-card-shadow">
-  <p-header>
-    <img [src]="data.thumbnail" class="event-img">
-  </p-header>
-  <div>{{data.dataDate}}</div>
-  <!-- <div>{{data.content}}</div> -->
-  <p-footer>
-    {{data.ticket.price}}원
-  </p-footer>
-</p-card>
+<div class="card">
+  <img [src]="data.thumbnail" class="card-img-top" [alt]="data.thumbnail">
+  <div class="card-body">
+    <h5 class="card-title">{{data.title}}</h5>
+    <p class="card-text">{{data.date}}</p>
+    <p class="card-text">{{data.dataDate}}</p>
+    <p class="card-text">{{data.content|truncateString:[50, '...']}}</p>
+    <p class="card-text">{{data.ticket.price}}원</p>
+    <a href="#" class="btn btn-info">자세히 보기</a>
+  </div>
+</div>

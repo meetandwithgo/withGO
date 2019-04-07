@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getEventList(1, 100);
+    this.getEventList(1, 10);
   }
 
   private getEventList(page: number, count: number) {

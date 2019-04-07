@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { User } from 'src/model/user';
 
 @Component({
-  selector: 'app-event-new',
+  selector: 'event-new',
   templateUrl: './event-new.component.html',
   styleUrls: ['./event-new.component.scss']
 })
 export class EventNewComponent implements OnInit {
-
-  constructor() { }
+  users: User[];
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit() {
+    this.userService.getUsers().subscribe(resp => {
+      this.users = resp;
+    })
   }
-
 }

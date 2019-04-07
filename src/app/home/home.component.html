@@ -3,9 +3,8 @@
     <img src="assets/withgo.png" width="250">
   </div>
   <div class="col-md-4 auto-margin">
-    <button pButton type="button" (click)="goToAddEvent()" label="이벤트 만들기"
-      class="float-right ui-button-secondary"></button>
-    <button pButton type="button" label="이상훈님" class="float-right ui-button-rounded ui-button-success"></button>
+    <button type="button" class="btn btn-primary" (click)="goToAddEvent()">이벤트 만들기</button>
+    <button type="button" class="btn btn-success">이상훈님</button>
   </div>
 </div>
 <div class="row">
@@ -17,7 +16,6 @@
 </div>
 <div class="row">
   <div class="col-md-6 offset-md-3">
-    <p-paginator [rows]="10" totalRecords="100" [rowsPerPageOptions]="[10,20,30]" (onPageChange)="paginate($event)">
-    </p-paginator>
+    <pagination [totalItems]="100" (pageChanged)="paginate($event)" [maxSize]="5"></pagination>
   </div>
 </div>

@@ -5,38 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EventComponent } from './event/event.component';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
-import { PaginatorModule } from 'primeng/paginator';
-import { DropdownModule } from 'primeng/dropdown';
 import { EventNewComponent } from './event-new/event-new.component';
 import { RouterModule, Routes } from '@angular/router';
-
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'event-new', component: EventNewComponent }
-];
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { TruncateStringPipe } from './truncate-string.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     EventComponent,
-    EventNewComponent
+    EventNewComponent,
+    TruncateStringPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CardModule,
-    ButtonModule,
     HttpClientModule,
-    PaginatorModule,
-    DropdownModule,
-    RouterModule.forRoot(
-      appRoutes
-    )
+    PaginationModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
