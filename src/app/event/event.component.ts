@@ -12,7 +12,7 @@ export class EventComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.data['date'] = `${this.data.eventDate} ${this.data.salesStart}~${this.data.salesEnd}`
+    this.data['date'] = `${this.data.eventDate.start} ${this.data.eventDate.end}`
   }
 
 }

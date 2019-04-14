@@ -1,13 +1,13 @@
 export class Event {
     constructor(
         public id: number,
-        public tumbnail: string,
+        public organization: number,
         public title: string,
+        public eventDate: Date,
+        public place: string,
+        public tumbnail: string,
         public content: string,
-        public salesStart: string,
-        public salesEnd: string,
-        public eventDate: string,
-        public ticket: Ticket
+        public tickets: Ticket[]
     ) { }
 }
 
@@ -16,6 +16,14 @@ export class Ticket {
         public id: number,
         public name: string,
         public description: string,
+        public saleDate: Date,
         public price: number
+    ) { }
+}
+
+export class Date {
+    constructor(
+        public start: string,
+        public end: string
     ) { }
 }

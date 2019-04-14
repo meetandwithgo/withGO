@@ -10,6 +10,9 @@ import { EventNewComponent } from './event-new/event-new.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { TruncateStringPipe } from './truncate-string.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgxUploaderModule } from 'ngx-uploader';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { TruncateStringPipe } from './truncate-string.pipe';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    PaginationModule.forRoot()
+    PaginationModule.forRoot(),
+    ReactiveFormsModule,
+    BsDatepickerModule.forRoot(),
+    NgxUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,4 +19,8 @@ export class EventService {
   getTotalEvent(): Observable<Event[]> {
     return this.http.get<Event[]>(`${this.prefix}`);
   }
+
+  addEvent(event: Event): Observable<any> {
+    return this.http.post<any>(`${this.prefix}`, event)
+  }
 }

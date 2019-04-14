@@ -7,3 +7,18 @@
         <li>{{user.mail}}</li>
     </ng-container>
 </ul>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    주최자 그룹<input type="text" class="form-control" formControlName="organization">
+    이벤트 이름 <input type="text" class="form-control" formControlName="title">
+    날짜<input type="text" class="form-control" bsDaterangepicker formControlName="eventDate">
+    장소 <input type="text" class="form-control" formControlName="place">
+    이미지 <input type="file" id="thumbnail" ngFileSelect formControlName="thumbnail" class="form-control-file"
+        placeholder="파일 선택하기" [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+    내용 <input type="text" class="form-control" formControlName="content">
+    티켓 이름 <input type="text" class="form-control" formControlName="ticketName">
+    티켓 설명 <input type="text" class="form-control" formControlName="ticketDescription">
+    티켓 판매 날짜<input type="text" class="form-control" bsDaterangepicker formControlName="ticketDate">
+    가격 <input type="text" class="form-control" formControlName="price">
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid || !isFile">등록</button>
+</form>
