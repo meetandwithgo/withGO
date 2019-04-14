@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     this.getEventList(event.page, event.rows);
   }
 
-  goToAddEvent() {
-    this.router.navigate(['/event-new'])
+  goToDetail(event: Event) {
+    this.router.navigate([`../event-detail/${event.id}`])
   }
 }

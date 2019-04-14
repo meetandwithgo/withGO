@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'withgo';
+
+  constructor(
+    private router: Router
+  ) { }
+
+  goToHome() {
+    this.router.navigate(['/home']);
+  }
+
+  goToAddEvent() {
+    this.router.navigate(['/event-new']);
+  }
+
+  goToLogin() {
+    this.router.navigate(['/login']);
+  }
 }

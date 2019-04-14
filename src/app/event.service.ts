@@ -16,6 +16,10 @@ export class EventService {
     return this.http.get<Event[]>(`${this.prefix}?_page=${page}&_limit=${count}`);
   }
 
+  getEvent(id: number): Observable<Event> {
+    return this.http.get<Event>(`${this.prefix}/${id}`);
+  }
+
   getTotalEvent(): Observable<Event[]> {
     return this.http.get<Event[]>(`${this.prefix}`);
   }

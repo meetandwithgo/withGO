@@ -7,12 +7,18 @@ import { HomeComponent } from './home/home.component';
 import { EventComponent } from './event/event.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EventNewComponent } from './event-new/event-new.component';
-import { RouterModule, Routes } from '@angular/router';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { TruncateStringPipe } from './truncate-string.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { NgxUploaderModule } from 'ngx-uploader';
+import { LoginComponent } from './login/login.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
+import { MyinfoComponent } from './myinfo/myinfo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,11 @@ import { NgxUploaderModule } from 'ngx-uploader';
     HomeComponent,
     EventComponent,
     EventNewComponent,
-    TruncateStringPipe
+    TruncateStringPipe,
+    LoginComponent,
+    EventDetailComponent,
+    MyinfoComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +40,10 @@ import { NgxUploaderModule } from 'ngx-uploader';
     PaginationModule.forRoot(),
     ReactiveFormsModule,
     BsDatepickerModule.forRoot(),
-    NgxUploaderModule
+    NgxUploaderModule,
+    LoadingBarModule,
+    LoadingBarRouterModule,
+    LoadingBarHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

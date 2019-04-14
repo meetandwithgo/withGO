@@ -1,16 +1,7 @@
 <div class="row">
-  <div class="col-md-4 offset-md-4 text-center" id="title">
-    <img src="assets/withgo.png" width="250">
-  </div>
-  <div class="col-md-4 auto-margin">
-    <button type="button" class="btn btn-primary" (click)="goToAddEvent()">이벤트 만들기</button>
-    <button type="button" class="btn btn-success">이상훈님</button>
-  </div>
-</div>
-<div class="row">
   <ng-container *ngFor="let event of events">
     <div class="col-md-4">
-      <event [data]="event"></event>
+      <event [data]="event" (click)="goToDetail(event)"></event>
     </div>
   </ng-container>
 </div>

@@ -1,12 +1,12 @@
 <h3>이벤트 만들기</h3>
-<p>새로운 이벤트를 주최하기 위해선 다음 단계들이 필요해요! 이벤트를 만들면 바로 게시됩니다.</p>
+<!-- <p>새로운 이벤트를 주최하기 위해선 다음 단계들이 필요해요! 이벤트를 만들면 바로 게시됩니다.</p>
 
 <h2>주최 호스트 선택</h2>
 <ul>
     <ng-container *ngFor="let user of users">
         <li>{{user.mail}}</li>
     </ng-container>
-</ul>
+</ul> -->
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     주최자 그룹<input type="text" class="form-control" formControlName="organization">
@@ -21,4 +21,5 @@
     티켓 판매 날짜<input type="text" class="form-control" bsDaterangepicker formControlName="ticketDate">
     가격 <input type="text" class="form-control" formControlName="price">
     <button type="submit" class="btn btn-primary" [disabled]="!form.valid || !isFile">등록</button>
+    <button type="button" class="btn btn-info" (click)="back()">뒤로 가기</button>
 </form>

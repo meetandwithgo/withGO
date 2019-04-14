@@ -67,7 +67,7 @@ export class EventNewComponent implements OnInit {
     } else if (output.type === 'done') {
       this.files.forEach(file => {
         alert(file.response);
-        this.router.navigate(['../'])
+        this.router.navigate(['/home'])
       });
     }
   }
@@ -86,8 +86,12 @@ export class EventNewComponent implements OnInit {
     // };
     this.eventService.addEvent(event).subscribe(resp => {
       alert(resp);
-      this.router.navigate(['../']);
+      this.router.navigate(['/home']);
     })
     // this.uploadInput.emit(uploadEvent);
+  }
+
+  back() {
+    this.router.navigate(['/home']);
   }
 }
