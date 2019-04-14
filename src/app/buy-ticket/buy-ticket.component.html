@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="form" *ngIf="event">
+        <ng-container *ngFor="let ticket of event.tickets">
+          <div class="card">
+            <div class="card-header">
+              {{ticket.name}}
+            </div>
+            <div class="card-body">
+              <input class="form-control" type="radio" name="ticket" [value]="ticket.id" formControlName="ticket">
+              {{ticket.price}} 원
+              <p>{{ticket.description}}</p>
+            </div>
+          </div>
+        </ng-container>
+        카드 <input type="text" class="form-control" formControlName="card">
+      </form>
+    </div>
+  </div>
+  <br>
+  <button type="button" class="btn btn-primary" (click)="buyTicket()" [disabled]="form.invalid">티켓 구매</button>
+  <button type="button" class="btn btn-info" (click)="back()">뒤로 가기</button>
+</div>

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { routerNgProbeToken } from '@angular/router/src/router_module';
-import { EventService } from '../event.service';
-import { Event } from 'src/model/event';
+import { Event } from 'src/models/event';
+import { EventService } from '../services/event.service';
 
 @Component({
   selector: 'event-detail',
@@ -28,4 +27,7 @@ export class EventDetailComponent implements OnInit {
     })
   }
 
+  buyTicket(event: Event) {
+    this.router.navigate(['./buy/tickets', event.id])
+  }
 }

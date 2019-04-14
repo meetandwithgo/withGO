@@ -19,6 +19,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { BuyTicketComponent } from './buy-ticket/buy-ticket.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     LoginComponent,
     EventDetailComponent,
     MyinfoComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BuyTicketComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     NgxUploaderModule,
     LoadingBarModule,
     LoadingBarRouterModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    CarouselModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

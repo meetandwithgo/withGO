@@ -1,12 +1,28 @@
-<div class="row">
-  <ng-container *ngFor="let event of events">
-    <div class="col-md-4">
-      <event [data]="event" (click)="goToDetail(event)"></event>
+<div class="container">
+  <div class="row" style="margin-bottom: 50px;">
+    <div class="col">
+      <carousel>
+        <slide *ngFor="let event of carouselEvents">
+          <img [src]="event.thumbnail" alt="first slide" style="display: block; width: 100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-primary" (click)="goToDetail(event)">이벤트 자세히 보기</button>
+          </div>
+        </slide>
+      </carousel>
     </div>
-  </ng-container>
+  </div>
 </div>
-<div class="row">
-  <div class="col-md-6 offset-md-3">
-    <pagination [totalItems]="100" (pageChanged)="paginate($event)" [maxSize]="5"></pagination>
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let event of events">
+      <div class="col-md-4">
+        <event [data]="event" (click)="goToDetail(event)"></event>
+      </div>
+    </ng-container>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <pagination [totalItems]="100" (pageChanged)="paginate($event)" [maxSize]="5"></pagination>
+    </div>
   </div>
 </div>

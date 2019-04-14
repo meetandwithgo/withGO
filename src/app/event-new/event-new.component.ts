@@ -1,11 +1,12 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
-import { UserService } from '../user.service';
-import { User } from 'src/model/user';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { EventService } from '../event.service';
-import { Event, Date, Ticket } from 'src/model/event';
+import { User } from 'src/models/user';
+import { FormGroup, FormControl } from '@angular/forms';
+import { Event, Date, Ticket } from 'src/models/event';
 import { Router } from '@angular/router';
-import { UploadOutput, UploadInput, UploadFile, humanizeBytes, UploaderOptions, UploadStatus } from 'ngx-uploader';
+import { UploadOutput, UploadInput, UploadFile, UploaderOptions } from 'ngx-uploader';
+import { UserService } from '../services/user.service';
+import { EventService } from '../services/event.service';
+import { FormService } from '../services/form.service';
 
 @Component({
   selector: 'event-new',
@@ -15,7 +16,6 @@ import { UploadOutput, UploadInput, UploadFile, humanizeBytes, UploaderOptions, 
 export class EventNewComponent implements OnInit {
   users: User[];
   form: FormGroup;
-  validators = [];
 
   isFile = false;
   files: UploadFile[];
@@ -34,22 +34,21 @@ export class EventNewComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.validators = [Validators.required, Validators.maxLength(100)]
     this.userService.getUsers().subscribe(resp => {
       this.users = resp;
     });
 
     this.form = new FormGroup({
-      organization: new FormControl('', this.validators),
-      title: new FormControl('', this.validators),
-      eventDate: new FormControl('', this.validators),
-      place: new FormControl('', this.validators),
-      thumbnail: new FormControl('', this.validators),
-      content: new FormControl('', this.validators),
-      ticketName: new FormControl('', this.validators),
-      ticketDescription: new FormControl('', this.validators),
-      ticketDate: new FormControl('', this.validators),
-      price: new FormControl('', this.validators),
+      organization: new FormControl('', FormService.validators),
+      title: new FormControl('', FormService.validators),
+      eventDate: new FormControl('', FormService.validators),
+      place: new FormControl('', FormService.validators),
+      thumbnail: new FormControl('', FormService.validators),
+      content: new FormControl('', FormService.validators),
+      ticketName: new FormControl('', FormService.validators),
+      ticketDescription: new FormControl('', FormService.validators),
+      ticketDate: new FormControl('', FormService.validators),
+      price: new FormControl('', FormService.validators),
     });
   }
 

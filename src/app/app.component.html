@@ -1,13 +1,11 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 offset-md-4 text-center" id="title">
-      <img src="assets/withgo.png" width="250" (click)="goToHome()" style="cursor: pointer">
-    </div>
-    <div class="col-md-4 auto-margin">
-      <button type="button" class="btn btn-primary" (click)="goToAddEvent()">이벤트 만들기</button>
-      <button type="button" class="btn btn-success" (click)="goToLogin()">로그인/회원가입</button>
-    </div>
+<div class="row">
+  <div class="col-md-4 offset-md-4 text-center" id="title">
+    <img src="assets/withgo.png" width="200" (click)="goToHome()" style="cursor: pointer">
   </div>
-  <router-outlet></router-outlet>
+  <div class="col-md-4 auto-margin">
+    <button type="button" class="btn btn-primary" (click)="goToAddEvent()">이벤트 만들기</button>
+    <button type="button" class="btn btn-success" (click)="goToLogin()">로그인/회원가입</button>
+  </div>
 </div>
+<router-outlet></router-outlet>
 <ngx-loading-bar [color]="'red'" [includeSpinner]="false"></ngx-loading-bar>

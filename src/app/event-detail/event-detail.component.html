@@ -1,1 +1,33 @@
-<pre>{{event|json}}</pre>
+<ng-container *ngIf="event">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <img [src]="event.thumbnail">
+        </div>
+        <div class="col">
+          <h3>{{event.title}}</h3>
+          <p>장소: {{event.place}}</p>
+          <p>일시: {{event.eventDate.start}} ~ {{event.eventDate.end}}</p>
+          <p>주최: {{event.organization}}</p>
+          <button type="button" class="btn btn-primary" (click)="buyTicket(event)">티켓 구매</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          {{event.content}}
+        </div>
+        <div class="col">
+          <p>티켓: {{event.tickets[0].name}}</p>
+          <p>설명: {{event.tickets[0].description}}</p>
+          <p>판매 기간: {{event.tickets[0].saleDate.start}} ~ {{event.tickets[0].saleDate.end}}</p>
+          <p>가격: {{event.tickets[0].price}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Event } from 'src/model/event';
+import { Event } from 'src/models/event';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -26,5 +26,9 @@ export class EventService {
 
   addEvent(event: Event): Observable<any> {
     return this.http.post<any>(`${this.prefix}`, event)
+  }
+
+  buyTicket(event: Event, ticket: any): Observable<any> {
+    return this.http.post<any>(`${this.prefix}/buy`, { event, ticket })
   }
 }
